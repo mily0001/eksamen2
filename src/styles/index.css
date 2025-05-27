@@ -1,0 +1,84 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gospelikbh img {
+  width: 400px;
+  margin: 25px;
+}
+
+.gospelikbh p {
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+.gospelikbh a {
+  text-decoration: none;
+  margin-left: 22px;
+  margin-top: 30px;
+  color: red;
+  font-family: 'Gabarito', sans-serif;
+  font-size: larger;
+}
+
+.hanscjafsnit {
+  background-image: url(/src/assets/hansbaggrund.png);
+  background-repeat: no-repeat;
+  margin: 50px;
+  width: auto;
+  height: auto;
+}
+
+.hanscjafsnit img {
+  width: 150px;
+  margin-left: 35%;
+  padding-top: 50px;
+  margin-bottom: 25px;
+}
+
+.hanscjafsnit p {
+  margin-left: 65px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-family: Helvetica, sans-serif;
+  font-size: smaller;
+  color: white;
+}
+
+.hanscjafsnit h3 {
+  color: white;
+  font-family: 'Gabarito', sans-serif;
+  margin-left: 65px;
+  font-size: 4vw;
+  max-width: 65%;
+  margin-bottom: 5px;
+}
+
+.hanscjafsnit a {
+  text-decoration: none;
+  margin-left: 65px;
+  color: red;
+  font-family: 'Gabarito', sans-serif;
+  font-size: small;
+}
