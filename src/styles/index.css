@@ -82,3 +82,36 @@ main {
   font-family: 'Gabarito', sans-serif;
   font-size: small;
 }
+
+.holdene :last-child {
+  margin-top: 30px;
+}
+
+.tilmelding {
+  background-image: url(/src/assets/tilmeldbaggrund.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  width: 90vw;
+  height: 500px;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.informationer {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.informationer p {
+  margin-left: 25px;
+}
+
+@media screen and (min-width: 800px) {
+  .gospelikbh {
+    display: grid;
+  }
+}

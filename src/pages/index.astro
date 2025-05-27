@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Hold from '../components/Hold.astro';
+import Tilmeld from '../components/Tilmeld.astro';
 import '../styles/style.css';
 import '../styles/index.css';
 ---
@@ -64,24 +65,67 @@ import '../styles/index.css';
         </a>
       </div>
       <h2>HOLDOVERSIGT</h2>
-      <Hold
-        holdnavn="THE GOSPEL CHOIR"
-        linje1="Fredens Kirke"
-        linje2="Ryesgade 68"
-        linje3="2100 Kbh. Ø"
-        logo="/src/assets/thegospelchoirlogo.png"
-        infohold="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-        holdbillede="/src/assets/gosplechoirimg.png"
-      />
-      <Hold
-        holdnavn="THE GOSPEL FELLOWSHIP"
-        linje1="The Gospel Fellowship"
-        linje2="Frederiksberg Allé 9"
-        linje3="1621 Kbh. V"
-        logo="/src/assets/copenhagengospelvoices.png"
-        infohold="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-        holdbillede="/src/assets/copnhagengospelbillede.png"
-      />
+      <div class="holdene">
+        <Hold
+          holdnavn="THE GOSPEL CHOIR"
+          linje1="Fredens Kirke"
+          linje2="Ryesgade 68"
+          linje3="2100 Kbh. Ø"
+          logo="/src/assets/thegospelchoirlogo.png"
+          infohold="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          holdbillede="/src/assets/gosplechoirimg.png"
+        />
+        <Hold
+          holdnavn="THE GOSPEL FELLOWSHIP"
+          linje1="The Gospel Fellowship"
+          linje2="Frederiksberg Allé 9"
+          linje3="1621 Kbh. V"
+          logo="/src/assets/copenhagengospelvoices.png"
+          infohold="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          holdbillede="/src/assets/copnhagengospelbillede.png"
+        />
+      </div>
+      <h2>TILMELD</h2>
+      <div class="tilmelding">
+        <Tilmeld holdnr="Hold 1" tid="17:00-19:00" dag="TIRSDAG" holdnavn="(The Gospel Choir)" />
+        <Tilmeld holdnr="Hold 2" tid="19:30-21:30" dag="TIRSDAG" holdnavn="(The Gospel Choir)" />
+        <Tilmeld
+          holdnr="Hold 1"
+          tid="17:00-19:00"
+          dag="TORSDAG"
+          holdnavn="(The Gospel Fellowship)"
+        />
+        <Tilmeld
+          holdnr="Hold 1"
+          tid="17:00-19:00"
+          dag="TORSDAG"
+          holdnavn="(The Gospel Fellowship)"
+        />
+      </div>
+      <div class="informationer">
+        <h2>OPTAGELSE OG TILMELDING</h2>
+        <hr />
+        <p>Der er ingen optagelseprøve - alle er velkommene!</p>
+        <p>1. Find det kor og hold som passer dig bedst.</p>
+        <p>2. Mød op - syng med - og se om det er noget for dig.</p>
+        <p>3. Forhåndstilmelding er ikke nødvendig.</p>
+        <h2>PRØVETIME</h2>
+        <hr />
+        <p>
+          Kom og syng med et par gange - helt uforpligtende og gratis - for at se om det er noget
+          for dig.
+        </p>
+        <h2>STUDERENDE, PENSIONIST OG FRIPLADS</h2>
+        <hr />
+        <p>
+          Der har altid været rabat i mine kor for studerende og pensionister. Denne rabat udvides
+          nu til også at gælde f.eks. arbejdsløse, mennesker på kontanthjælp eller i
+          ressourceforløb… og andre med en lidt mindre økonomi. Jeg tilbyder friplads til dig som er
+          presset HELT i bund, og som slet ikke har råd til at være med i et kor i efteråret! Hvis
+          det er din situation, så send mig en mail, og beskriv kort hvorfor du har behov for en
+          friplads
+        </p>
+      </div>
       <Footer />
     </main>
     <script src="../styles/style.css"></script>
