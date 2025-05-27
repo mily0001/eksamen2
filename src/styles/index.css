@@ -1,0 +1,155 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gospelikbh img {
+  width: 400px;
+  margin: 25px;
+}
+
+.gospelikbh p {
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  font-family: Helvetica, sans-serif;
+  font-size: medium;
+}
+
+.gospelikbh a {
+  text-decoration: none;
+  margin-left: 22px;
+  margin-top: 30px;
+  color: red;
+  font-family: 'Gabarito', sans-serif;
+  font-size: larger;
+}
+
+.hanscjafsnit {
+  background-image: url(/src/assets/hansbaggrund.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px;
+  width: auto;
+  height: auto;
+}
+
+.hanscjafsnit img {
+  width: 150px;
+  margin-left: 35%;
+  padding-top: 50px;
+  margin-bottom: 25px;
+}
+
+.hanscjafsnit p {
+  margin-left: 65px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-family: Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: 200;
+  color: white;
+}
+
+.hanscjafsnit h3 {
+  color: white;
+  font-family: 'Gabarito', sans-serif;
+  margin-left: 65px;
+  font-size: 4vw;
+  max-width: 70%;
+  margin-bottom: 5px;
+}
+
+.hanscjafsnit a {
+  text-decoration: none;
+  margin-left: 65px;
+  color: red;
+  font-family: 'Gabarito', sans-serif;
+  font-size: small;
+}
+
+.holdene :last-child {
+  margin-top: 30px;
+}
+
+.tilmelding {
+  background-image: url(/src/assets/tilmeldbaggrund.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  width: 90vw;
+  height: 500px;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.informationer {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.informationer p {
+  margin-left: 25px;
+}
+
+@media screen and (min-width: 750px) {
+  .gospelikbh {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .hanscjafsnit {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .hanscjafsnit :last-child {
+    margin-top: 20px;
+  }
+
+  .holdene {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .holdene :last-child {
+    margin-top: 0px;
+  }
+
+  .tilmelding {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 250px;
+    background-size: cover;
+  }
+
+  .informationer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    max-width: 900px;
+    margin: 0px 20px 0px 40px;
+  }
+}

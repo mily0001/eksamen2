@@ -1,0 +1,59 @@
+---
+const { holdnr, dag, holdnavn, tid } = Astro.props;
+---
+
+<article>
+  <div class="holdnr">
+    <div>
+      <h2>{dag}</h2>
+      <p>{holdnavn}</p>
+    </div>
+    <div class="tidinfo">
+      <p>{holdnr}</p>
+      <p>{tid}</p>
+    </div>
+    <a href="/src/pages/tilmeld.astro">Tilmeld dig her</a>
+  </div>
+</article>
+
+<style>
+  .holdnr {
+    background-image: url(/src/assets/tilmeldingboks.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .holdnr p {
+    text-align: center;
+    font-size: small;
+  }
+
+  .holdnr h2 {
+    padding-top: 30px;
+    margin-bottom: 0px;
+    margin-left: 35px;
+  }
+
+  .tidinfo {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .holdnr a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: red;
+    border: red 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .holdnr a:hover {
+    color: white;
+    background-color: red;
+  }
+</style>

@@ -1,0 +1,89 @@
+---
+const { holdnavn, linje1, linje2, linje3, logo, infohold, holdbillede } = Astro.props;
+---
+
+<article>
+  <div class="hold">
+    <h3>{holdnavn}</h3>
+    <img class="vector" src="/src/assets/vectorsvg.svg" alt="vector" />
+    <!-- <div class="holdinfotekst"> -->
+    <div class="adressenh">
+      <div>
+        <h4>ADRESSE</h4>
+        <p>{linje1}</p>
+        <p>{linje2}</p>
+        <p>{linje3}</p>
+      </div>
+      <img src={logo} alt="log1" />
+    </div>
+    <p class="holdinfo">
+      {infohold}
+    </p>
+    <!-- </div> -->
+    <img class="holdimg" src={holdbillede} alt="hold1" />
+  </div>
+</article>
+
+<style>
+  .hold {
+    background-image: url(/src/assets/holdbaggrund.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hold h3 {
+    padding-top: 45px;
+    margin-left: 50px;
+    font-family: 'Gabarito', sans-serif;
+    color: white;
+  }
+
+  .adressenh {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 45px; */
+    margin-top: 20px;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .adressenh img {
+    width: 75px;
+  }
+
+  .adressenh h4 {
+    font-family: 'Gabarito', sans-serif;
+    color: #333333;
+    font-weight: 700;
+  }
+
+  .adressenh p {
+    font-family: Helvetica, sans-serif;
+    margin-top: 5px;
+    font-size: smaller;
+  }
+
+  .holdinfo {
+    color: white;
+    margin: 20px 15px 0px 50px;
+    padding-bottom: 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+  }
+
+  .holdimg {
+    width: 65vw;
+    max-width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+  }
+</style>

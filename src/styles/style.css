@@ -21,7 +21,42 @@ main {
   margin-right: auto;
 }
 
-/* .hero {
+.hero {
   margin: 20px;
   margin-top: 35px;
-} */
+}
+
+h1 {
+  font-family: 'Gabarito', sans-serif;
+  font-weight: 900;
+  font-size: 9vw;
+  text-align: center;
+  color: white;
+  text-shadow:
+    -3px -3px 0 black,
+    3px -3px 0 black,
+    -3px 3px 0 black,
+    3px 3px 0 black;
+  letter-spacing: 4px;
+}
+
+hr {
+  margin: 20px;
+  height: 3px;
+  background-color: black;
+}
+
+h2 {
+  font-family: 'Gabarito', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.vector {
+  width: 190px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
