@@ -6,21 +6,21 @@ const { holdnavn, linje1, linje2, linje3, logo, infohold, holdbillede } = Astro.
   <div class="hold">
     <h3>{holdnavn}</h3>
     <img class="vector" src="/src/assets/vectorsvg.svg" alt="vector" />
-    <div>
-      <div class="adressenh">
-        <div>
-          <h4>ADRESSE</h4>
-          <p>{linje1}</p>
-          <p>{linje2}</p>
-          <p>{linje3}</p>
-        </div>
-        <img src={logo} alt="log1" />
+    <!-- <div class="holdinfotekst"> -->
+    <div class="adressenh">
+      <div>
+        <h4>ADRESSE</h4>
+        <p>{linje1}</p>
+        <p>{linje2}</p>
+        <p>{linje3}</p>
       </div>
-      <p class="holdinfo">
-        {infohold}
-      </p>
-      <img class="holdimg" src={holdbillede} alt="hold1" />
+      <img src={logo} alt="log1" />
     </div>
+    <p class="holdinfo">
+      {infohold}
+    </p>
+    <!-- </div> -->
+    <img class="holdimg" src={holdbillede} alt="hold1" />
   </div>
 </article>
 
@@ -28,6 +28,7 @@ const { holdnavn, linje1, linje2, linje3, logo, infohold, holdbillede } = Astro.
   .hold {
     background-image: url(/src/assets/holdbaggrund.svg);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 80%;
     height: auto;
     margin-left: auto;
@@ -79,8 +80,10 @@ const { holdnavn, linje1, linje2, linje3, logo, infohold, holdbillede } = Astro.
   }
 
   .holdimg {
-    width: 300px;
-    margin-left: 45px;
+    width: 65vw;
+    max-width: 275px;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 30px;
   }
 </style>
