@@ -51,4 +51,11 @@ h2 {
   font-weight: 600;
   font-size: 22px;
   margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.vector {
+  width: 190px;
+  margin-top: 10px;
+  margin-left: 50px;
 }

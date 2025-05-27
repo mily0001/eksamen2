@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Hold from '../components/Hold.astro';
 import '../styles/style.css';
 import '../styles/index.css';
 ---
@@ -63,7 +64,24 @@ import '../styles/index.css';
         </a>
       </div>
       <h2>HOLDOVERSIGT</h2>
-
+      <Hold
+        holdnavn="THE GOSPEL CHOIR"
+        linje1="Fredens Kirke"
+        linje2="Ryesgade 68"
+        linje3="2100 Kbh. Ø"
+        logo="/src/assets/thegospelchoirlogo.png"
+        infohold="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        holdbillede="/src/assets/gosplechoirimg.png"
+      />
+      <Hold
+        holdnavn="THE GOSPEL FELLOWSHIP"
+        linje1="The Gospel Fellowship"
+        linje2="Frederiksberg Allé 9"
+        linje3="1621 Kbh. V"
+        logo="/src/assets/copenhagengospelvoices.png"
+        infohold="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        holdbillede="/src/assets/copnhagengospelbillede.png"
+      />
       <Footer />
     </main>
     <script src="../styles/style.css"></script>
