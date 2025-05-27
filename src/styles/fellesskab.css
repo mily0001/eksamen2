@@ -1,0 +1,73 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.vector {
+  margin-left: 20px;
+}
+
+.billederullen {
+  background-image: url(/src/assets/hansbaggrund.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  max-width: 90%;
+}
+
+.billederulle {
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 50px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 50px; */
+}
+
+.billederulle img {
+  width: 300px;
+  height: 200px;
+  align-self: center;
+}
+
+.fellesp {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.odas {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 750px) {
+  .anbefalinger {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .startfelles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
