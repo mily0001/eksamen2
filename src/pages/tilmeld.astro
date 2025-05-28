@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/style.css';
+import '../styles/tilmeld.css';
 ---
 
 <!doctype html>
@@ -22,7 +23,39 @@ import '../styles/style.css';
   <body>
     <main>
       <Header />
-
+      <h1>TILMELDING</h1>
+      <hr />
+      <p class="tilmeldinfo">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nulla vel laborum
+        ad, quam distinctio? Repudiandae voluptatum perferendis quasi porro corrupti quis assumenda
+        nulla placeat rem. Eos perspiciatis nobis asperiores.
+      </p>
+      <div class="gridtilmeld">
+        <div>
+          <div class="navnboks" contenteditable="true">
+            <p>Navn</p>
+          </div>
+          <div class="emailboks" contenteditable="true"><p>e-mail</p></div>
+          <div class="medlemsskab" contenteditable="true">
+            <p>Medlemsskab</p>
+            <img src="/src/assets/dropdown.svg" alt="dropdown" />
+          </div>
+          <div class="besked" contenteditable="true"><p>Besked</p></div>
+        </div>
+        <div class="tekstboks">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam
+            voluptatum, asperiores, laboriosam, incidunt quisquam voluptatum asperiores laboriosam
+            incidunt quisquam voluptatum asperiores laboriosam incidunt.
+          </p>
+        </div>
+      </div>
+      <div class="tilmeldknap">
+        <p>Tilmeld</p>
+      </div>
+      <div class="hero">
+        <img src="/src/assets/tilmeldhero.png" alt="heroimg" />
+      </div>
       <Footer />
     </main>
   </body>
