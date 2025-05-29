@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (min-width: 575px) {
+  .kalenderen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
