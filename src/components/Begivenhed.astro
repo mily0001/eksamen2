@@ -1,9 +1,99 @@
-<article>
-  <div class="begivenhed"></div>
+---
+import { supabase } from '../api/supabaseClient';
+
+const { data: events, error } = await supabase.from('eksamen2_begivenheder').select('*');
+
+if (error) {
+  console.error(error);
+}
+---
+
+<article class="gridkalender">
+  {
+    events?.map((event) => (
+      <div class="begivenhed">
+        <img src={`/src/billeder/${event.billedelink}`} alt="Begivenhedsbillede" />
+        <h2>{event.begivenhednavn}</h2>
+        <p>{event.beskrivelse}</p>
+        <h3>{event.tidspunkt}</h3>
+        <div class="adresse">
+          <h3>ADRESSE:</h3>
+          <h4>{event.sted1}</h4>
+          <h4>{event.sted2}</h4>
+          <h4>{event.sted3}</h4>
+        </div>
+        <a href={event.aktueltlink}>Læs mere her</a>
+      </div>
+    ))
+  };
 </article>
 
 <style>
   .begivenhed {
-    background-image: url(/src/assets/begivenhedboks.png);
+    background-image: url(/src/billeder/begivenhedboks.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 675px;
+    width: 100%;
+    margin: 25px;
+    padding: 20px;
+  }
+
+  .begivenhed img {
+    width: 350px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .begivenhed h2,
+  .begivenhed h3,
+  .begivenhed h4 {
+    text-align: center;
+    font-family: 'Gabarito', sans-serif;
+  }
+
+  .begivenhed p {
+    width: 350px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  .adresse h4 {
+    font-weight: 400;
+  }
+
+  .adresse {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .begivenhed a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: red;
+    border: red 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: small;
+    font-family: 'Fira Sans', sans-serif;
+    display: block;
+    text-align: center;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .begivenhed a:hover {
+    color: white;
+    background-color: red;
+  }
+
+  @media screen and (min-width: 820px) {
+    .gridkalender {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
   }
 </style>
