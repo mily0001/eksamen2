@@ -20,7 +20,7 @@ video {
 }
 
 .billederullen {
-  background-image: url(/src/billeder/hansbaggrund.png);
+  background-image: url(/public/billeder/hansbaggrund.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
