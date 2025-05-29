@@ -63,7 +63,8 @@ video {
 .tekstboks p {
   color: white;
   font-family: 'Fira Sans', sans-serif;
-  padding: 40px 100px 0px 30px;
+  padding: 40px 110px 0px 30px;
+  max-width: 450px;
 }
 
 .tilmeldknap {
