@@ -51,10 +51,10 @@ video {
 
 .tekstboks {
   background-image: url(/billeder/tekstbokstilmeld.webp);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 90%;
-  height: 250px;
+  width: 80%;
+  padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
@@ -63,8 +63,10 @@ video {
 .tekstboks p {
   color: white;
   font-family: 'Fira Sans', sans-serif;
-  padding: 40px 110px 0px 30px;
+  padding: 40px 40px 0px 30px;
   max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tilmeldknap {
@@ -123,6 +125,12 @@ video {
   .medlemsskab,
   .besked {
     padding-left: 70px;
+  }
+
+  .tekstboks {
+    height: 300px;
+    padding-bottom: 20px;
+    padding-top: 30px;
   }
 
   .gridtilmeld {
