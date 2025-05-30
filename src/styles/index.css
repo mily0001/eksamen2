@@ -45,7 +45,7 @@ main {
 }
 
 .hanscjafsnit {
-  background-image: url(/public/billeder/hansbaggrund.png);
+  background-image: url(/billeder/hansbaggrund.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 50px;
@@ -94,7 +94,7 @@ main {
 }
 
 .tilmelding {
-  background-image: url(/public/billeder/tilmeldbaggrund.png);
+  background-image: url(/billeder/tilmeldbaggrund.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;

@@ -19,7 +19,7 @@ video {
 .emailboks,
 .medlemsskab,
 .besked {
-  background-image: url(/public/billeder/tilmeldboks1.png);
+  background-image: url(/billeder/tilmeldboks1.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -35,7 +35,7 @@ video {
 }
 
 .besked {
-  background-image: url(/public/billeder/beskedtilmeldboks.png);
+  background-image: url(/billeder/beskedtilmeldboks.png);
   height: 200px;
 }
 
@@ -50,7 +50,7 @@ video {
 }
 
 .tekstboks {
-  background-image: url(/public/billeder/tekstbokstilmeld.png);
+  background-image: url(/billeder/tekstbokstilmeld.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 90%;
