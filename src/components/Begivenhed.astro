@@ -12,7 +12,7 @@ if (error) {
   {
     events?.map((event) => (
       <div class="begivenhed">
-        <img src={`/public/billeder/${event.billedelink}`} alt="Begivenhedsbillede" />
+        <img src={`/billeder/${event.billedelink}`} alt="Begivenhedsbillede" />
         <h2>{event.begivenhednavn}</h2>
         <p>{event.beskrivelse}</p>
         <h3>{event.tidspunkt}</h3>
@@ -25,12 +25,12 @@ if (error) {
         <a href={event.aktueltlink}>Læs mere her</a>
       </div>
     ))
-  };
+  }
 </article>
 
 <style>
   .begivenhed {
-    background-image: url(/public/billeder/begivenhedboks.png);
+    background-image: url(/billeder/begivenhedboks.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
